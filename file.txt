@@ -1,0 +1,136 @@
+file here
+Chris Jones - 503-277-9710
+
+afsjadkfasfkajsfa
+# twitch.tv/pdxchris
+# != bang (exclamation point is not equal to, T != F is true)
+#
+
+split string
+split takes it by the spaces
+phrase = skafjs aodiufaj skdfaj piusafi
+phrase_list = phrase.list()
+print(phrase_list[0])
+if no spaces, only dashes etc if URL
+phrase_list = phrase.list('-')
+
+word_dash = '-'.join(word_list ,# this adds dashes between all the spaces on the word_list
+
+3/14/18
+tuple (build in function): immutable(cannot change) word, index, anything in para()
+useful for data you don't want to change, has to stay in a certain format
+if you try to reassign something within the tuple you will get this error: TypeError: 'tuple' object does not support item assignment
+type() tells you what class it's in
+
+function:
+method: a function within a class
+
+return: using whatever was return in something else in the program
+
+import
+print(help)(random))
+
+3/16/2018
+built in functions:
+dict : dictionaries
+
+filter (must always return bool, t or f) lambda functions:
+takes two arguments (irritator, function)
+
+3.20.2018
+Opening files
+
+3.21.2018
+Connecting to 3rd party packages/modules (ie django is a package)
+command line tool ==> pip (package manager for python)
+API - sending data to site and getting into back
+
+pip install X (request, django, etc)
+
+VIRTUAL ENVIRONMENTS:
+you can access virtual environments to have different packages on different environments
+  **keep separate environments for each project so you're not deploying a bunch of packages that aren't needed
+
+python3 -m venv ..\..\venv\marchday
+python - module - virtual environment - ..\..venv\ - "whatever you want to call the folder, but keep it short"
+don't put it in same folders labs, so it's not posted all
+"bin" activation file, not scripts(only on windows)
+..\..\ ==> means 2 files back
+
+source..\..\venv\marchday\bins\activate
+**to activate the new environment**
+
+pip list on the command line to see what pips are installed within that virtual environments
+pip freeze to see the version number
+
+r = requests.get(site)
+print(r.json())
+print(r.text())
+print()
+print(type(r.json()))
+r is an object created from a thing
+json is a method that gives output like dictionary for r, or text, but that's only if the file is coming in as that, you can index whatever is coming in
+
+when you do this you're requesting information from the site and then waiting to get info back.  So it's going to take a little bit longer
+
+3.26.18
+Objects
+
+class (camelcase) BankAccount(object):  where object is the inheritance
+class BankAccount:
+  __magic__ (double underscore, dunder)
+  __init__.py (method)
+
+3.27.18
+objects again
+
+class SomeName:
+  def __init__(self):   #built in method.  #self is what you are going to pass in, the arguments, ie like rain1
+    self.name =        #self definition, information
+
+  def thing(self):    #method, rule of thumb should always have self as the first method
+
+
+  def __str__ : will print out only within this def
+ c1 = SomeName()
+ print(c1)
+
+
+  #num_match = 0
+  # for i in lotto_numbers:
+  #     if i in winning_numbers:
+  #         num_match += num_match + 1
+  #     print ('You matched {} numbers out of 6.'.format(num_match))
+  #     if num_match == 1:
+  #         print('You won $4!')
+  #         print ('Your numbers are:\n{}'.format(lotto_numbers))
+  #         print('The winning lottery numbers are:\n{}'.format(winning_numbers))
+  #     elif num_match == 2:
+  #         print('You won $7!')
+  #         print ('Your numbers are:\n{}'.format(lotto_numbers))
+  #         print('The winning lottery numbers are:\n{}'.format(winning_numbers))
+  #     elif num_match == 3:
+  #         print('You won $100!')
+  #         print ('Your numbers are:\n{}'.format(lotto_numbers))
+  #         print('The winning lottery numbers are:\n{}'.format(winning_numbers))
+  #     elif num_match == 4:
+  #         print('You won $50000!')
+  #         print ('Your numbers are:\n{}'.format(lotto_numbers))
+  #         print('The winning lottery numbers are:\n{}'.format(winning_numbers))
+  #     elif num_match == 5:
+  #         print('You won $1000000!')
+  #         print ('Your numbers are:\n{}'.format(lotto_numbers))
+  #         print('The winning lottery numbers are:\n{}'.format(winning_numbers))
+  #     elif num_match == 6:
+  #         print('You won $25000000!')
+  #         print ('Your numbers are:\n{}'.format(lotto_numbers))
+  #         print('The winning lottery numbers are:\n{}'.format(winning_numbers))
+  #     else:
+  #         print ('Sorry, you are not a winner.\nThe cost of tickets is $2, the total amount spent is ${}'.format(cost))
+  #         print ('Your numbers are:\n{}'.format(lotto_numbers))
+  #         print('The winning lottery numbers are:\n{}'.format(winning_numbers))
+
+
+3.30.18
+comprehension:
+useful for dictionaries, tuples, and lists

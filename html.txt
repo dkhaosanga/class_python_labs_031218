@@ -1,0 +1,24 @@
+3.26.18
+html
+beginning and ending tab to make an element
+(refer to index.html)
+
+<div> : generic box/container, new lines, if a div isn't there it'd be right next to each other
+<article> : something contained within in, same tags, does the same thing as div sort of.
+<hr> : horizontal rule, line between
+
+id's need to be unique ==
+<element id='myElement'>
+</element>
+match beginning and end tags
+
+should have 2 elements, nested within the other
+
+classes --> with css and javascript
+
+everything within an html page has to be within <html> tag
+comments are <!-- note -->, everything between doesn't show up, but it will show up in inspect
+
+header: inside is all the title, meta-tags, navigation stuff, style, etc
+body: 
+footer: you don't always need a footer

@@ -1,0 +1,11 @@
+adjective1 = input("Enter an adjective: ")
+common = input("Enter a common noun: ")
+proper = input("Enter a proper noun: ")
+adjective2 = input("Enter an adjective: ")
+proper2 = input("Enter a proper noun: ")
+
+print("The Triceratops was a dinosaur that looked " + adjective1 + " because it had three " + common + "s on top of its head.")
+print("It used these to stay safe from enemies like " + proper + ".")
+print("It was a " + adjective2 + " dinosaur, but not the biggest.")
+print("It was only ten feet tall.")
+print("That is not seen as tall as two " + proper2 + "s put together.")
