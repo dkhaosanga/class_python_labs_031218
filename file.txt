@@ -134,3 +134,11 @@ class SomeName:
 3.30.18
 comprehension:
 useful for dictionaries, tuples, and lists
+
+4.3.18
+closures
+decorator
+these are functions within a function
+
+4.4.18:
+recursions - fibinacci sequence, factorials
