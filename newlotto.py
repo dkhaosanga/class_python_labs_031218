@@ -15,9 +15,8 @@ while Menu:
         def user_numbers():
             user_quick_numbers = []
             user_numbers = random.sample(range(1,99),6)
-            print (user_numbers)
             return user_numbers
-        user_numbers = user_numbers()
+
 
 
         def winning_numbers():
@@ -33,41 +32,42 @@ while Menu:
             return len(list3)
 
         def results():
-            match = match_list(user_numbers, lottery_numbers)
+            user_numbers1 = user_numbers()
+            match = match_list(user_numbers1, lottery_numbers)
             if match == 1:
                 print ('\nCongratulations, you won $4!')
-                print ('Players Numbers: {}'.format(user_numbers))
+                print ('Players Numbers: {}'.format(user_numbers1))
                 print ('Lottery Numbers: {}\n'.format(lottery_numbers))
 
             elif match == 2:
                 print ('\nCongratulations, you won $7!')
-                print ('Players Numbers: {}'.format(user_numbers))
+                print ('Players Numbers: {}'.format(user_numbers1))
                 print ('Lottery Numbers: {}\n'.format(lottery_numbers))
 
             elif match == 3:
                 print ('\nCongratulations, you won $100!')
-                print ('Players Numbers: {}'.format(user_numbers))
+                print ('Players Numbers: {}'.format(user_numbers1))
                 print ('Lottery Numbers: {}\n'.format(lottery_numbers))
 
             elif match == 4:
                 print ('\nCongratulations, you won $50,000!')
-                print ('Players Numbers: {}'.format(user_numbers))
+                print ('Players Numbers: {}'.format(user_numbers1))
                 print ('Lottery Numbers: {}\n'.format(lottery_numbers))
 
             elif match == 5:
                 print ('Congratulations, you won $1,000,000!')
-                print ('Players Numbers: {}'.format(user_numbers))
+                print ('Players Numbers: {}'.format(user_numbers1))
                 print ('Lottery Numbers: {}\n'.format(lottery_numbers))
 
             elif match == 6:
-                print ('Congratulations, you won the JACKPOT!!!\n$25,000,000')
-                print ('Players Numbers: {}'.format(user_numbers))
+                print ('Congratulations, you won the JACKPOT!!\n$25,000,000')
+                print ('Players Numbers: {}'.format(user_numbers1))
                 print ('Lottery Numbers: {}\n'.format(lottery_numbers))
 
             else:
                 print ('\nSorry, you are not a winner.')
                 print ('You lost $2')
-                print ('Players Numbers: {}'.format(user_numbers))
+                print ('Players Numbers: {}'.format(user_numbers1))
                 print ('Lottery Numbers: {}\n'.format(lottery_numbers))
 
         for n in range(100000):
